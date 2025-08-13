@@ -27,7 +27,19 @@ const Banner: React.FC = () => {
                     </div>
                   </div>
                 </div>
-
+                {/* @ts-expect-error */}
+                <model-viewer
+                    src="/Justice_Monument_0811014441_texture.glb"
+                    ar
+                    camera-controls
+                    camera-orbit="15deg 75deg 3.9m"
+                    poster="poster.webp"
+                    auto-rotate={false}
+                    shadow-intensity="1"
+                    style={{ width: '100%', height: '100%', paddingTop: 120}}
+                    className="libertyS">
+                {/* @ts-expect-error */}
+                </model-viewer>
               </div>
               <div className="ab-bann">
                 <h1 className="nm-ban">Estudio Juridico Contable ML</h1>
